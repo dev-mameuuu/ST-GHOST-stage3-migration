@@ -1,0 +1,9 @@
+{
+  "base_config": "st-ghost/configs/stage1_exp1_main.json",
+  "output_dir": "outputs/stage3_original_ghost_comparison",
+  "ranking_cache_dir": "outputs/stage1_exp1_main",
+  "num_images_per_spec": 400,
+  "candidate_top_k": 1000,
+  "save_failed_images": true,
+  "checkpoint_every": 16
+}

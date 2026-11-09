@@ -1,0 +1,13 @@
+{
+  "run_name": "qwen25vl7b_stage3",
+  "victim_family": "qwen2_5_vl",
+  "victim_model_path": "/srv/models/Qwen2.5-VL-7B-Instruct",
+  "clip_checkpoint_path": "/srv/models/CLIP-ViT-H-14-laion2B-s32B-b79K/open_clip_model.safetensors",
+  "diffusion_model_path": "/srv/models/stable-diffusion-2-1-unclip",
+  "owl_model_path": "/srv/models/owlv2-base-patch16-ensemble",
+  "data_path": "/srv/datasets/COCO",
+  "coco_captions_path": "/srv/datasets/COCO/annotations/captions_train2017.json",
+  "projector_path": "/srv/checkpoints/projector_qwen25vl7b/best_state_dict.pt",
+  "target_dim": 3584,
+  "num_tokens": 144
+}

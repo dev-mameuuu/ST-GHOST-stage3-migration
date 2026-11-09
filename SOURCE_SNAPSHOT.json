@@ -1,0 +1,202 @@
+{
+  "created_at": "2026-11-09T17:10:57.069516+08:00",
+  "purpose": "Stage-3 source migration; new victim experiments use fresh outputs",
+  "source_files_copied_without_modification": [
+    {
+      "path": "GHOST-master/LICENSE",
+      "sha256": "2e244c45435b1f6ab0342e7ce519775afc1b849fc8c1dea4c16de7c231705f9e",
+      "bytes": 1071
+    },
+    {
+      "path": "GHOST-master/README.md",
+      "sha256": "f789893efbad83c5859f434d9afaf17585cecdfd7386c4f617f3287a6b0b74c9",
+      "bytes": 914
+    },
+    {
+      "path": "GHOST-master/data.py",
+      "sha256": "1aa2f53c4e9675255fe9f226c4663c3695260137d462f7dda00eccadf7e0ba1c",
+      "bytes": 13050
+    },
+    {
+      "path": "GHOST-master/enhanced_text_representations.py",
+      "sha256": "8bb50c4a539dff4b663d7feb297e1079a8fe5b535a40d8c286c26acd156a8a79",
+      "bytes": 3329
+    },
+    {
+      "path": "GHOST-master/evals/validate_projector.py",
+      "bytes": 11177,
+      "sha256": "a670484d8dd89064deac8d4b26a4c7439c393a91b88399e8f99912d9af3d4b1e"
+    },
+    {
+      "path": "GHOST-master/main.py",
+      "sha256": "b4af5130a59a3601cf96888c48f902fca793547132e2435763cdf81bf1cd56f5",
+      "bytes": 22348
+    },
+    {
+      "path": "GHOST-master/projector/__init__.py",
+      "sha256": "ef4ab300095a120df90b3c664dd9a89c76872ee9fc5a4b5ab558bd341ce76b69",
+      "bytes": 23
+    },
+    {
+      "path": "GHOST-master/projector/projector.py",
+      "sha256": "cd05223f6b043076dea730521f471e7bab47f075aed37f8ce59655115d7650e1",
+      "bytes": 5681
+    },
+    {
+      "path": "GHOST-master/train_projector.py",
+      "bytes": 17730,
+      "sha256": "f55fa187726d311ddd30e5116f8747ba83840ff501adedef384de0b471fc15f8"
+    },
+    {
+      "path": "GHOST-master/utils.py",
+      "sha256": "2bcb03bd966410f7d09e2ac4a258eae82c620cdf0615905f0049fedf0adae14a",
+      "bytes": 26203
+    },
+    {
+      "path": "requirements-stage1.txt",
+      "sha256": "0014d72d04b6acc05b8ce39737c8298c60fc6b59b4b44d97a1007e3c8e59477f",
+      "bytes": 3069
+    },
+    {
+      "path": "st-ghost/configs/stage1_exp1_main.json",
+      "sha256": "5424e3ea544e68cc9e41e9b84618e105d576ec9a78b98546a1c5dfdc61d8e925",
+      "bytes": 1574
+    },
+    {
+      "path": "st-ghost/configs/stage3_original_ghost_comparison.json",
+      "sha256": "e4a8338d0c05fb08b51696c7b46232018e1bbb02c2c5b5a2970147dad8cf6091",
+      "bytes": 286
+    },
+    {
+      "path": "st-ghost/configs/train_projector_qwen.json",
+      "sha256": "4095f4a346214348b8cab9bfd1367e5ff71500cbdfd58f81716bad03a89d69e5",
+      "bytes": 717
+    },
+    {
+      "path": "st-ghost/run_stage1.py",
+      "sha256": "508e27ff157940197ca0ac00372641beb1637fac9f32cb00a8940cc14edbb555",
+      "bytes": 54561
+    },
+    {
+      "path": "st-ghost/run_stage1_exp1.py",
+      "sha256": "d60d43bda77ba74c57b504423b5b038a499101a9bd32b95fbab7e9cd3ebdcdd4",
+      "bytes": 54480
+    },
+    {
+      "path": "st-ghost/run_stage1_exp4.py",
+      "sha256": "6abbbc3b4f40ceffc9a2c9ae1da6aadc56536fca32ca793e31cffea4cfa93da4",
+      "bytes": 77211
+    },
+    {
+      "path": "st-ghost/run_stage1_exp4_level_oo.py",
+      "sha256": "8ae0d7f74d00bde82bab6adc86d4b5b4059c81d516251c04445a5f345780a125",
+      "bytes": 36716
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_atomic_guided.py",
+      "sha256": "5447703b137e8b3141652b4c772c07beb73a7a4271be94d83dc82c468a74335b",
+      "bytes": 26258
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_atomic_guided_embeddings.py",
+      "sha256": "8f2db8eb7ceb2cdaa99986859fc33111c4a75c95f9a0dfa100b30e015eb640c9",
+      "bytes": 19451
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback.py",
+      "sha256": "508a06f2cb56b145ee0bcf1c642373e04f29fcaf21b72a7f95f3d0d6fa536677",
+      "bytes": 27593
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_step_compare.py",
+      "sha256": "f551311556354972e4b8fa8565708f065fa50aa93a7e091247feb3edcc98b697",
+      "bytes": 15001
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_victim_evaluation.py",
+      "sha256": "477a5bd0a06ca5e4e147afb841c1cd5299b125fd4b164a920edeb3aa63e2e49f",
+      "bytes": 72619
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_victim_evaluation_500_four_seeds.py",
+      "sha256": "8ec39b91a0a5781d604607c0634c57b3d95d3bcf144767ada121102060bf41dd",
+      "bytes": 31854
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_loss_diagnostic.py",
+      "sha256": "04d0b28409f90646bd451f19d44fc8f3e05020969ef5ccb2f8d61e6d2e45ee2a",
+      "bytes": 25758
+    },
+    {
+      "path": "st-ghost/run_stage3_original_ghost_comparison.py",
+      "sha256": "f6b8b61b2804add059fd7983a955063352ce865abd6c2cc91ecde8b749ab59ce",
+      "bytes": 50297
+    },
+    {
+      "path": "st-ghost/run_stage3_original_ghost_comparison_service.sh",
+      "sha256": "502da0212f1cc026e6541dce0ed22a5d41b2b56ac16715367eacdd9ec6a3fdba",
+      "bytes": 3393
+    },
+    {
+      "path": "st-ghost/run_stage3_st_ghost.py",
+      "sha256": "e94464932c99eda4ab0498b9291d71e740079f5eb2aab3baa372355f4fa3018a",
+      "bytes": 14479
+    },
+    {
+      "path": "st-ghost/run_stage3_st_ghost_service.sh",
+      "sha256": "9754efbd72a2f1b04e3a0a785ddaf0f2b73302d73d9ffcbe0f39421ea9cb9f60",
+      "bytes": 3198
+    },
+    {
+      "path": "st-ghost/tests/test_stage2_level_oo_generation_feedback_victim_evaluation.py",
+      "sha256": "b2ae375c667704147307111d31701aa78b82168e215a91b0919f2fa6bea668ea",
+      "bytes": 41242
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_gpu_wait.py",
+      "sha256": "1211107633a1b312be0e161a5eed144849ee9dab649c9dd3360788b241d36e77",
+      "bytes": 9329
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_original_ghost_comparison.py",
+      "sha256": "03e1f5ffe80db26f0b8055dc4a4818b419923022b3831710b867e3cd2783d457",
+      "bytes": 17952
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_st_ghost.py",
+      "sha256": "116a95e80409bce8d703eb282805485bfdd5536108f50fe9a9f087bd317e550c",
+      "bytes": 10750
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_st_ghost_gpu_wait.py",
+      "sha256": "c7373ce201b8b6f5bd8b0ca7c988bc44439710c3a2567a7e20171090011b0fab",
+      "bytes": 7030
+    },
+    {
+      "path": "st-ghost/train_projector_qwen.py",
+      "sha256": "2dd86249243b25734b09a6693231e8e0e4fd620fde0b10a20f13310000bdbf7d",
+      "bytes": 13168
+    },
+    {
+      "path": "st-ghost/wait_stage3_original_ghost_comparison_gpu.py",
+      "sha256": "cf36e53f857370da8414420dcfe347de7d5f1f6e840067d615a37a928b1d379a",
+      "bytes": 14804
+    },
+    {
+      "path": "st-ghost/wait_stage3_st_ghost_gpu.py",
+      "sha256": "0476f63dd3a1b7acc23798d00983a872ce829ce24e32808d7a05ecaa721700fc",
+      "bytes": 14761
+    }
+  ],
+  "historical_json_policy": "Old project root removed from path strings; historical decisions are Qwen-specific and are not run inputs for a new victim",
+  "excluded": [
+    "model weights",
+    "COCO images and annotations",
+    "projector checkpoint",
+    "generated images",
+    "optimization tensor checkpoints",
+    "logs",
+    "virtual environment",
+    "credentials"
+  ]
+}

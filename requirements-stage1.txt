@@ -1,0 +1,89 @@
+# ST-GHOST stage 1 dependencies
+# Recommended runtime: Linux, Python 3.10 or 3.11.
+#
+# Install PyTorch and torchvision FIRST using the command generated at
+# https://pytorch.org/get-started/locally/ for the server's CUDA driver.
+# Example for a CUDA 12.4 wheel (verify against the server before using):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#
+# torch and torchvision are intentionally omitted below because their wheel
+# must match the server CUDA/driver environment.
+
+# ---------------------------------------------------------------------------
+# MANUAL MODEL/DATA ASSETS (not installed by pip)
+# ---------------------------------------------------------------------------
+# Download these directories/checkpoints on a machine with reliable network
+# access, then copy them to the server. Set --cache_path to the directory
+# containing the Hugging Face model folders, or set HF_HOME accordingly.
+#
+# Victim MLLM (choose at least one for stage 1):
+#   Qwen/Qwen2.5-VL-7B-Instruct
+#   llava-hf/llava-v1.6-mistral-7b-hf
+#   THUDM/GLM-4.1V-9B-Thinking
+# Optional reference model:
+#   meta-llama/Llama-3.2-11B-Vision-Instruct
+#
+# CLIP image/text encoder used by utils.py:
+#   openai/ViT-H-14 with OpenCLIP checkpoint laion2b_s32b_b79k
+#   (open_clip.create_model_and_transforms downloads this if absent.)
+#
+# unCLIP image generator used by utils.py:
+#   stabilityai/stable-diffusion-2-1-unclip
+#
+# Object-presence filter:
+#   google/owlv2-base-patch16-ensemble
+#
+# Projector checkpoint:
+#   The trained TokenMLP checkpoint passed through --projector_path.
+#   It must match the selected victim model's token count and hidden size.
+#
+# COCO data (required for candidate selection):
+#   train2017/ images
+#   annotations/instances_train2017.json
+#   annotations/captions_train2017.json
+#   Keep the directory layout expected by data.COCO and pass its root via
+#   --data_path.
+#
+# These assets are large and are deliberately not represented as pip
+# requirements. Verify checksums and test that every local folder contains
+# config.json, tokenizer/processor files, and model weight files before the
+# long experiment.
+
+# Model loading and differentiable inference
+transformers>=4.53,<4.58
+accelerate>=1.8,<2
+safetensors>=0.5,<1
+sentencepiece>=0.2,<1
+protobuf>=5.29,<7
+tokenizers>=0.21,<0.23
+
+# Vision encoders and image generation
+open-clip-torch>=2.31,<3
+diffusers>=0.34,<0.37
+huggingface-hub>=0.33,<1
+Pillow>=10.4,<13
+
+# Qwen2.5-VL image/video preprocessing
+qwen-vl-utils>=0.0.11,<0.1
+av>=14,<17
+
+# Experiment runtime and data processing
+numpy>=1.26,<3
+scipy>=1.13,<2
+pandas>=2.2,<3
+tqdm>=4.66,<5
+matplotlib>=3.9,<4
+
+# Stage 1 evaluation and statistics
+scikit-learn>=1.5,<2
+scikit-image>=0.24,<1
+torchmetrics>=1.4,<2
+torch-fidelity>=0.3,<1
+
+# Optional experiment tracking used by training utilities in this repository
+wandb>=0.17,<1
+
+# Optional low-memory loading / later LoRA experiments.
+# bitsandbytes is Linux/CUDA-specific but useful on the target server.
+bitsandbytes>=0.45,<1; platform_system == "Linux"
+peft>=0.13,<1

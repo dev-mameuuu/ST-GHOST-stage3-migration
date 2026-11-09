@@ -1,0 +1,38 @@
+# Runtime data and trained/downloaded assets
+/runtime/
+/outputs/
+/logs/
+/st-ghost/data/
+/assets/
+/data/
+/models/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+
+# Per-server settings and secrets
+/server_paths.local.json
+.env
+.env.*
+*.pem
+*.key
+.netrc
+.huggingface/
+
+# Environments and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.vscode/
+.idea/
+.DS_Store

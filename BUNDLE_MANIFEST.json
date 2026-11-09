@@ -1,0 +1,329 @@
+{
+  "created_at": "2026-11-09T17:22:25.330755+08:00",
+  "purpose": "Standalone Stage-3 source and small-input migration bundle; excludes external assets and experiment checkpoints",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 414,
+      "sha256": "d31a75deb81316c05e00cb9eb69b8fc152972aaf1871ace6a9ec7837335b7d02"
+    },
+    {
+      "path": "GHOST-master/LICENSE",
+      "bytes": 1071,
+      "sha256": "2e244c45435b1f6ab0342e7ce519775afc1b849fc8c1dea4c16de7c231705f9e"
+    },
+    {
+      "path": "GHOST-master/README.md",
+      "bytes": 914,
+      "sha256": "f789893efbad83c5859f434d9afaf17585cecdfd7386c4f617f3287a6b0b74c9"
+    },
+    {
+      "path": "GHOST-master/data.py",
+      "bytes": 13050,
+      "sha256": "1aa2f53c4e9675255fe9f226c4663c3695260137d462f7dda00eccadf7e0ba1c"
+    },
+    {
+      "path": "GHOST-master/enhanced_text_representations.py",
+      "bytes": 3329,
+      "sha256": "8bb50c4a539dff4b663d7feb297e1079a8fe5b535a40d8c286c26acd156a8a79"
+    },
+    {
+      "path": "GHOST-master/evals/validate_projector.py",
+      "bytes": 11177,
+      "sha256": "a670484d8dd89064deac8d4b26a4c7439c393a91b88399e8f99912d9af3d4b1e"
+    },
+    {
+      "path": "GHOST-master/main.py",
+      "bytes": 22348,
+      "sha256": "b4af5130a59a3601cf96888c48f902fca793547132e2435763cdf81bf1cd56f5"
+    },
+    {
+      "path": "GHOST-master/projector/__init__.py",
+      "bytes": 23,
+      "sha256": "ef4ab300095a120df90b3c664dd9a89c76872ee9fc5a4b5ab558bd341ce76b69"
+    },
+    {
+      "path": "GHOST-master/projector/projector.py",
+      "bytes": 5681,
+      "sha256": "cd05223f6b043076dea730521f471e7bab47f075aed37f8ce59655115d7650e1"
+    },
+    {
+      "path": "GHOST-master/train_projector.py",
+      "bytes": 17730,
+      "sha256": "f55fa187726d311ddd30e5116f8747ba83840ff501adedef384de0b471fc15f8"
+    },
+    {
+      "path": "GHOST-master/utils.py",
+      "bytes": 26203,
+      "sha256": "2bcb03bd966410f7d09e2ac4a258eae82c620cdf0615905f0049fedf0adae14a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9043,
+      "sha256": "e50ec03d8123e33a16f71b1036f7225ea7e59585dd8a744adb263374b1720878"
+    },
+    {
+      "path": "SOURCE_SNAPSHOT.json",
+      "bytes": 7105,
+      "sha256": "5090d8e58bde594b776fa5ec8a2582ae241ed746a8fce663fc348b9194df684b"
+    },
+    {
+      "path": "configs/server_paths.example.json",
+      "bytes": 607,
+      "sha256": "cb907bc0ec1969173ae4289abfbcc4b0bed455eac77c1dbf41534ca0c70bdaee"
+    },
+    {
+      "path": "docs/EXPERIMENT_NOTES.md",
+      "bytes": 4876,
+      "sha256": "38adf691d1d3271724881764b8f7eb51cbdbad3b2b972a3044c8265692efea5d"
+    },
+    {
+      "path": "docs/PROJECTOR_TRAINING.md",
+      "bytes": 13205,
+      "sha256": "36ac18eba78459a575af597d53f9926d4b10136b8442707955646e1fd833fd3a"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1729,
+      "sha256": "cb4f1548420846dae1c659239e62061d1511a8cfbddb78e9b9d9a1a8605a4577"
+    },
+    {
+      "path": "docs/VICTIM_ADAPTATION.md",
+      "bytes": 3632,
+      "sha256": "b362be7fc5c79cc677623e1d89511c567816dbc65ec8778e6848f8a72c1df2bc"
+    },
+    {
+      "path": "migration_inputs/external_assets.json",
+      "bytes": 992,
+      "sha256": "dfe4a683fc5b0820a72d00d06d049b2f4cef342d1f97530c0c650fce0313de71"
+    },
+    {
+      "path": "migration_inputs/historical/original_ghost_resolved_config.json",
+      "bytes": 2564,
+      "sha256": "822c9d43de0094ebfd0d508472888356cb83b4c99fa508528d65d125049ceb96"
+    },
+    {
+      "path": "migration_inputs/historical/original_ghost_summary.json",
+      "bytes": 7130,
+      "sha256": "2a1caa8b24fb03740ce88da3617879e91633ee20e0aa326f6ae8ae2376260e2c"
+    },
+    {
+      "path": "migration_inputs/historical/selected_images_1000.json",
+      "bytes": 929357,
+      "sha256": "76476bbc1c692eb22e13fa435e9227ea3072cddb84b1d72922d9415bc21f92a9"
+    },
+    {
+      "path": "migration_inputs/historical/selected_images_2000.json",
+      "bytes": 1858964,
+      "sha256": "94482c4549e0fbeea928ad105c5ec47c1ba55c86c2dd859152931c45fdb0182b"
+    },
+    {
+      "path": "migration_inputs/historical/stghost_completion_snapshot.json",
+      "bytes": 343,
+      "sha256": "a46c1f34af87a9d81beaed3d16d5acc2660da1ada4cb50f63ade5b07d1d6e5b8"
+    },
+    {
+      "path": "migration_inputs/historical/stghost_experiment_plan.json",
+      "bytes": 1670,
+      "sha256": "07d8c8573d2ee768a4adad4a060e0c9c23e64d2f1a656f9bef39b193a21bcc6d"
+    },
+    {
+      "path": "migration_inputs/historical/stghost_resolved_config.json",
+      "bytes": 6451,
+      "sha256": "257c860d285251315d2c160662156f9f5e81d01b77fdbe6a1fd329294e443d8c"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/clip_ranked_cat_chair.csv",
+      "bytes": 96656,
+      "sha256": "96371c6ec4c3688f0ab8348a6d0bc30b782d7675696164a4b7d6cdb251f531c8"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/clip_ranked_cow_motorcycle.csv",
+      "bytes": 101588,
+      "sha256": "b7f4bedd8e5631f4ac7c6d5899412f22f660900ff087ae2dd9ca89527c810e1b"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/clip_ranked_dog_bicycle.csv",
+      "bytes": 98596,
+      "sha256": "13f81a2262ea56da2459402c20addd6d2ff51e5844560609d95fd74e952ea69f"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/clip_ranked_elephant_truck.csv",
+      "bytes": 101617,
+      "sha256": "4feb4dfc84744d91039aa7f08ae69ff824307b2c0f3e2bf1716c02545a9b113e"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/clip_ranked_horse_bus.csv",
+      "bytes": 96655,
+      "sha256": "1b312f7ec51e5142630c651b6d973e577c864e8e35ca7131df9c5fcb8c5251c8"
+    },
+    {
+      "path": "migration_inputs/ranking_cache/resolved_config.json",
+      "bytes": 1800,
+      "sha256": "16d9399530b341de93e2a36d099a283788ac509ec5029b3d94913126690608ee"
+    },
+    {
+      "path": "migration_inputs/reference/stghost_reference.json",
+      "bytes": 6463,
+      "sha256": "36eef4b0bb2ccad6b93f98f8fe67f6b72e3f18858a4947ca616ab4d06a938e27"
+    },
+    {
+      "path": "requirements-stage1.txt",
+      "bytes": 3069,
+      "sha256": "0014d72d04b6acc05b8ce39737c8298c60fc6b59b4b44d97a1007e3c8e59477f"
+    },
+    {
+      "path": "requirements-stage3.txt",
+      "bytes": 581,
+      "sha256": "23ee71e1e97cfc230b3cbd162280e13763831f4d712e87a121f671b5048b650c"
+    },
+    {
+      "path": "st-ghost/configs/stage1_exp1_main.json",
+      "bytes": 1574,
+      "sha256": "5424e3ea544e68cc9e41e9b84618e105d576ec9a78b98546a1c5dfdc61d8e925"
+    },
+    {
+      "path": "st-ghost/configs/stage3_original_ghost_comparison.json",
+      "bytes": 286,
+      "sha256": "e4a8338d0c05fb08b51696c7b46232018e1bbb02c2c5b5a2970147dad8cf6091"
+    },
+    {
+      "path": "st-ghost/configs/train_projector_qwen.json",
+      "bytes": 717,
+      "sha256": "4095f4a346214348b8cab9bfd1367e5ff71500cbdfd58f81716bad03a89d69e5"
+    },
+    {
+      "path": "st-ghost/run_stage1.py",
+      "bytes": 54561,
+      "sha256": "508e27ff157940197ca0ac00372641beb1637fac9f32cb00a8940cc14edbb555"
+    },
+    {
+      "path": "st-ghost/run_stage1_exp1.py",
+      "bytes": 54480,
+      "sha256": "d60d43bda77ba74c57b504423b5b038a499101a9bd32b95fbab7e9cd3ebdcdd4"
+    },
+    {
+      "path": "st-ghost/run_stage1_exp4.py",
+      "bytes": 77211,
+      "sha256": "6abbbc3b4f40ceffc9a2c9ae1da6aadc56536fca32ca793e31cffea4cfa93da4"
+    },
+    {
+      "path": "st-ghost/run_stage1_exp4_level_oo.py",
+      "bytes": 36716,
+      "sha256": "8ae0d7f74d00bde82bab6adc86d4b5b4059c81d516251c04445a5f345780a125"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_atomic_guided.py",
+      "bytes": 26258,
+      "sha256": "5447703b137e8b3141652b4c772c07beb73a7a4271be94d83dc82c468a74335b"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_atomic_guided_embeddings.py",
+      "bytes": 19451,
+      "sha256": "8f2db8eb7ceb2cdaa99986859fc33111c4a75c95f9a0dfa100b30e015eb640c9"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback.py",
+      "bytes": 27593,
+      "sha256": "508a06f2cb56b145ee0bcf1c642373e04f29fcaf21b72a7f95f3d0d6fa536677"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_step_compare.py",
+      "bytes": 15001,
+      "sha256": "f551311556354972e4b8fa8565708f065fa50aa93a7e091247feb3edcc98b697"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_victim_evaluation.py",
+      "bytes": 72619,
+      "sha256": "477a5bd0a06ca5e4e147afb841c1cd5299b125fd4b164a920edeb3aa63e2e49f"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_generation_feedback_victim_evaluation_500_four_seeds.py",
+      "bytes": 31854,
+      "sha256": "8ec39b91a0a5781d604607c0634c57b3d95d3bcf144767ada121102060bf41dd"
+    },
+    {
+      "path": "st-ghost/run_stage2_level_oo_loss_diagnostic.py",
+      "bytes": 25758,
+      "sha256": "04d0b28409f90646bd451f19d44fc8f3e05020969ef5ccb2f8d61e6d2e45ee2a"
+    },
+    {
+      "path": "st-ghost/run_stage3_original_ghost_comparison.py",
+      "bytes": 50297,
+      "sha256": "f6b8b61b2804add059fd7983a955063352ce865abd6c2cc91ecde8b749ab59ce"
+    },
+    {
+      "path": "st-ghost/run_stage3_original_ghost_comparison_service.sh",
+      "bytes": 3393,
+      "sha256": "502da0212f1cc026e6541dce0ed22a5d41b2b56ac16715367eacdd9ec6a3fdba"
+    },
+    {
+      "path": "st-ghost/run_stage3_st_ghost.py",
+      "bytes": 14479,
+      "sha256": "e94464932c99eda4ab0498b9291d71e740079f5eb2aab3baa372355f4fa3018a"
+    },
+    {
+      "path": "st-ghost/run_stage3_st_ghost_service.sh",
+      "bytes": 3198,
+      "sha256": "9754efbd72a2f1b04e3a0a785ddaf0f2b73302d73d9ffcbe0f39421ea9cb9f60"
+    },
+    {
+      "path": "st-ghost/tests/test_stage2_level_oo_generation_feedback_victim_evaluation.py",
+      "bytes": 41242,
+      "sha256": "b2ae375c667704147307111d31701aa78b82168e215a91b0919f2fa6bea668ea"
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_gpu_wait.py",
+      "bytes": 9329,
+      "sha256": "1211107633a1b312be0e161a5eed144849ee9dab649c9dd3360788b241d36e77"
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_original_ghost_comparison.py",
+      "bytes": 17952,
+      "sha256": "03e1f5ffe80db26f0b8055dc4a4818b419923022b3831710b867e3cd2783d457"
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_st_ghost.py",
+      "bytes": 10750,
+      "sha256": "116a95e80409bce8d703eb282805485bfdd5536108f50fe9a9f087bd317e550c"
+    },
+    {
+      "path": "st-ghost/tests/test_stage3_st_ghost_gpu_wait.py",
+      "bytes": 7030,
+      "sha256": "c7373ce201b8b6f5bd8b0ca7c988bc44439710c3a2567a7e20171090011b0fab"
+    },
+    {
+      "path": "st-ghost/train_projector_qwen.py",
+      "bytes": 13168,
+      "sha256": "2dd86249243b25734b09a6693231e8e0e4fd620fde0b10a20f13310000bdbf7d"
+    },
+    {
+      "path": "st-ghost/wait_stage3_original_ghost_comparison_gpu.py",
+      "bytes": 14804,
+      "sha256": "cf36e53f857370da8414420dcfe347de7d5f1f6e840067d615a37a928b1d379a"
+    },
+    {
+      "path": "st-ghost/wait_stage3_st_ghost_gpu.py",
+      "bytes": 14761,
+      "sha256": "0476f63dd3a1b7acc23798d00983a872ce829ce24e32808d7a05ecaa721700fc"
+    },
+    {
+      "path": "tests/test_portable_configuration.py",
+      "bytes": 4001,
+      "sha256": "b52fd8ab48ba933ca069228c11a3585d8e3ccf70b64136a9954b9861f5135a92"
+    },
+    {
+      "path": "tools/configure_server.py",
+      "bytes": 8937,
+      "sha256": "cc927df85c77b8d2e0e08102f515f6b1731841ff994601a721219f14fef59069"
+    },
+    {
+      "path": "tools/verify_bundle.py",
+      "bytes": 1410,
+      "sha256": "763b644cf861bcf48a9961a8d758a30bc530560f8da6d5530ea5125a5974ee71"
+    }
+  ],
+  "file_count_excluding_manifest": 64,
+  "total_bytes_excluding_manifest": 4115463,
+  "updated_at": "2026-11-09T18:47:27.478681+08:00"
+}

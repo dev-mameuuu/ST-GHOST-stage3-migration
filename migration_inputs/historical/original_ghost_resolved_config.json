@@ -1,0 +1,91 @@
+{
+  "victim_model_path": "st-ghost/data/models/Qwen2.5-VL-7B-Instruct",
+  "clip_checkpoint_path": "st-ghost/data/models/CLIP-ViT-H-14-laion2B-s32B-b79K/open_clip_model.safetensors",
+  "projector_path": "outputs/projector_qwen/best_state_dict.pt",
+  "data_path": "st-ghost/data/coco/COCO",
+  "coco_captions_path": "st-ghost/data/coco/COCO/annotations/captions_train2017.json",
+  "diffusion_model_path": "st-ghost/data/models/stable-diffusion-2-1-unclip",
+  "diffusion_variant": "fp16",
+  "owl_model_path": "st-ghost/data/models/owlv2-base-patch16-ensemble",
+  "output_dir": "outputs/stage3_original_ghost_comparison",
+  "num_images_per_spec": 400,
+  "candidate_top_k": 1000,
+  "clip_selection_batch_size": 64,
+  "num_steps": 100,
+  "learning_rate": 0.1,
+  "context_dim": 1024,
+  "hidden_dim": 2048,
+  "clip_dim": 1024,
+  "num_tokens": 144,
+  "target_dim": 3584,
+  "lambda_clip": 15.0,
+  "lambda_reg": 10.0,
+  "yes_threshold": 0.8,
+  "num_generations": 4,
+  "bootstrap_samples": 10000,
+  "diffusion_t": 30,
+  "noise_level": 0,
+  "num_inference_steps": 50,
+  "guidance_scale": 5.0,
+  "diffusion_prompt_mode": "ghost_trigger",
+  "owl_threshold": 0.5,
+  "resume": true,
+  "checkpoint_every": 16,
+  "save_failed_images": true,
+  "target_specs": [
+    {
+      "name": "dog_bicycle",
+      "objects": [
+        "dog",
+        "bicycle"
+      ]
+    },
+    {
+      "name": "cat_chair",
+      "objects": [
+        "cat",
+        "chair"
+      ]
+    },
+    {
+      "name": "horse_bus",
+      "objects": [
+        "horse",
+        "bus"
+      ]
+    },
+    {
+      "name": "cow_motorcycle",
+      "objects": [
+        "cow",
+        "motorcycle"
+      ]
+    },
+    {
+      "name": "elephant_truck",
+      "objects": [
+        "elephant",
+        "truck"
+      ]
+    }
+  ],
+  "ranking_cache_dir": "outputs/stage1_exp1_main",
+  "protocol_version": "stage3_original_ghost_comparison_multi_o_no_seed_v1",
+  "conditions": [
+    "Multi-O"
+  ],
+  "repeats_per_image": 1,
+  "random_seed": null,
+  "generation_protocol": "one_candidate_per_threshold_step_then_retry",
+  "threshold_probability": "qwen_pre_update",
+  "threshold_comparison": ">",
+  "prescreen_protocol": "exp1_single_and_multi_both_no",
+  "globally_unique_images": true,
+  "vae_image_contract": {
+    "implementation": "GHOST-master/utils.py (same as run_stage1_exp1.py)",
+    "encoder_input_range": "[0,1] (legacy reference behavior)",
+    "decoder_postprocess": "clamp(0,1), without signed-to-RGB rescaling",
+    "precision": "float16 reference pipeline"
+  },
+  "base_config": "st-ghost/configs/stage1_exp1_main.json"
+}

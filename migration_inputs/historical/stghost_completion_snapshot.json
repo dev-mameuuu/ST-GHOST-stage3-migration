@@ -1,0 +1,13 @@
+{
+  "generation_complete": 310,
+  "generation_expected": 1000,
+  "optimization_snapshots_complete": 310,
+  "optimization_snapshots_expected": 1000,
+  "saved_optimization_updates": [
+    45
+  ],
+  "victim_evaluations_complete": 0,
+  "victim_evaluations_expected": 1000,
+  "evaluation_complete": false,
+  "all_methods_use_generation_index": 0
+}

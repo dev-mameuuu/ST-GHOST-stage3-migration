@@ -1,0 +1,35 @@
+{
+  "protocol_version": "stage3_st_ghost_clean_init_staged21_1000_step45_lr003_four_seeds_v1",
+  "source_output": "outputs/stage3_original_ghost_comparison",
+  "sample_selection": {
+    "sample_count": 1000,
+    "source_sample_count": 2000,
+    "unique_selected_original_images": 1000,
+    "duplicate_original_images": 0,
+    "selected_by_spec": {
+      "cat_chair": 200,
+      "cow_motorcycle": 200,
+      "dog_bicycle": 200,
+      "elephant_truck": 200,
+      "horse_bus": 200
+    },
+    "sampling": "uniform_within_each_of_five_pairs_from_frozen_2000_image_manifest",
+    "selection_seed": 42,
+    "optimization_base_seed": 42,
+    "original_ghost_attack_outcomes_used_for_selection": false,
+    "stage1_embedding_used_for_selection": false,
+    "stage1_archive_role": "none_clean_images_selected_from_stage3_manifest",
+    "prompt_policy": "original_ghost_manifest_multi_prescreen_question",
+    "reference_config": "outputs/stage2_level_oo_generation_feedback_victim_evaluation_staged21_750_clean_init_victim_clean_ssim080_step45_lr002_vae_normalized_v1/resolved_config.json"
+  },
+  "learning_rate": 0.03,
+  "optimization_updates": 45,
+  "condition_stage_count": 21,
+  "condition_initialization": "clean",
+  "candidates_per_task": 4,
+  "candidate_policy": "optimization_seed_g0_plus_three_new_seeds_frozen_conditions",
+  "planned_final_images": 4000,
+  "success_definition": "at_least_one_of_four_victim_yes_no_detector_verification",
+  "optimization_output": "outputs/stage3_st_ghost_clean_init_staged21_1000_step45_lr003_four_seeds_v1/optimization",
+  "candidate_output": "outputs/stage3_st_ghost_clean_init_staged21_1000_step45_lr003_four_seeds_v1/four_seeds"
+}

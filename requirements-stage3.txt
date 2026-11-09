@@ -1,0 +1,21 @@
+# Versions used in the source server's Stage-3 environment.
+# Python 3.11 recommended. Install torch/torchvision FIRST for the target GPU.
+# Source server: torch==2.8.0+cu128, torchvision==0.23.0+cu128.
+# This file does not install/replace torch or torchvision directly.
+transformers==4.57.6
+diffusers==0.36.0
+accelerate==1.14.0
+safetensors==0.8.0
+open-clip-torch==2.32.0
+numpy==2.4.4
+scipy==1.17.1
+scikit-image==0.26.0
+Pillow==12.2.0
+matplotlib==3.11.0
+tqdm==4.68.4
+tokenizers==0.22.2
+huggingface-hub==0.36.2
+qwen-vl-utils==0.0.14
+av==16.1.0
+sentencepiece==0.2.2
+protobuf==6.33.6

@@ -1,0 +1,259 @@
+{
+  "seed": 42,
+  "seeds": [
+    42
+  ],
+  "victim_model_path": "st-ghost/data/models/Qwen2.5-VL-7B-Instruct",
+  "clip_checkpoint_path": "st-ghost/data/models/CLIP-ViT-H-14-laion2B-s32B-b79K/open_clip_model.safetensors",
+  "projector_path": "outputs/projector_qwen/best_state_dict.pt",
+  "data_path": "st-ghost/data/coco/COCO",
+  "coco_captions_path": "st-ghost/data/coco/COCO/annotations/captions_train2017.json",
+  "diffusion_model_path": "st-ghost/data/models/stable-diffusion-2-1-unclip",
+  "diffusion_variant": "fp16",
+  "owl_model_path": "st-ghost/data/models/owlv2-base-patch16-ensemble",
+  "levels": [
+    "Level-OO"
+  ],
+  "num_images_per_spec": 200,
+  "candidate_top_k": 1500,
+  "clip_selection_batch_size": 64,
+  "num_steps": 100,
+  "learning_rate": 0.03,
+  "context_dim": 1024,
+  "hidden_dim": 2048,
+  "clip_dim": 1024,
+  "num_tokens": 144,
+  "target_dim": 3584,
+  "lambda_clip": 15.0,
+  "lambda_reg": 10.0,
+  "yes_threshold": 0.8,
+  "num_generations": 1,
+  "bootstrap_samples": 10000,
+  "permutation_samples": 10000,
+  "diffusion_t": 30,
+  "noise_level": 0,
+  "num_inference_steps": 50,
+  "guidance_scale": 5.0,
+  "diffusion_prompt_mode": "ghost_trigger",
+  "owl_threshold": 0.5,
+  "resume": true,
+  "checkpoint_every": 16,
+  "save_failed_images": false,
+  "target_specs": [
+    {
+      "name": "dog_bicycle",
+      "objects": [
+        "dog",
+        "bicycle"
+      ],
+      "attributes": [
+        [
+          "dog",
+          "white"
+        ],
+        [
+          "bicycle",
+          "red"
+        ]
+      ],
+      "relation": [
+        "dog",
+        "beside",
+        "bicycle"
+      ]
+    },
+    {
+      "name": "cat_chair",
+      "objects": [
+        "cat",
+        "chair"
+      ],
+      "attributes": [
+        [
+          "cat",
+          "black"
+        ],
+        [
+          "chair",
+          "blue"
+        ]
+      ],
+      "relation": [
+        "cat",
+        "beside",
+        "chair"
+      ]
+    },
+    {
+      "name": "horse_bus",
+      "objects": [
+        "horse",
+        "bus"
+      ],
+      "attributes": [
+        [
+          "horse",
+          "brown"
+        ],
+        [
+          "bus",
+          "yellow"
+        ]
+      ],
+      "relation": [
+        "horse",
+        "beside",
+        "bus"
+      ]
+    },
+    {
+      "name": "cow_motorcycle",
+      "objects": [
+        "cow",
+        "motorcycle"
+      ],
+      "attributes": [
+        [
+          "cow",
+          "black"
+        ],
+        [
+          "motorcycle",
+          "red"
+        ]
+      ],
+      "relation": [
+        "cow",
+        "beside",
+        "motorcycle"
+      ]
+    },
+    {
+      "name": "elephant_truck",
+      "objects": [
+        "elephant",
+        "truck"
+      ],
+      "attributes": [
+        [
+          "elephant",
+          "gray"
+        ],
+        [
+          "truck",
+          "blue"
+        ]
+      ],
+      "relation": [
+        "elephant",
+        "beside",
+        "truck"
+      ]
+    }
+  ],
+  "source_protocol_version": "stage3_original_ghost_comparison_multi_o_no_seed_v1",
+  "protocol_version": "stage2_level_oo_generation_feedback_victim_evaluation_staged21_victim_clean_step45_lr002_v1",
+  "level_oo_prompts": [
+    "Do you see both {a} and {b} in the image? Answer with 'Yes' or 'No'.",
+    "Is there both {a} and {b} here? Answer with 'Yes' or 'No'.",
+    "Does the image contain both {a} and {b}? Answer with 'Yes' or 'No'.",
+    "Can you find both {a} and {b} in this picture? Answer with 'Yes' or 'No'.",
+    "Would you say there are both {a} and {b} here? Answer with 'Yes' or 'No'.",
+    "Are both {a} and {b} present in this image? Answer with 'Yes' or 'No'."
+  ],
+  "level_oo_heldout_template": "Can you see both {a} and {b} in this picture? Answer only Yes or No.",
+  "generation_evaluation": "none",
+  "detector_evaluation": false,
+  "diagnostic_loss_names": {
+    "a": "atomic object A",
+    "b": "atomic object B",
+    "oo": "canonical joint object query"
+  },
+  "lambda_atom": 1.0,
+  "atomic_guidance_mode": "weaker_target_by_current_loss",
+  "atomic_weight_rule": "L_i / (L_a + L_b); equal weights if both zero",
+  "atomic_weights_detached": true,
+  "atomic_question_template": "Can you see any {a} in this picture? Answer only Yes or No.",
+  "reference_protocol_version": "stage2_level_oo_atomic_guided_v1",
+  "embedding_storage_dtype": "float32",
+  "embedding_storage_device": "cpu",
+  "optimizer": "Adam",
+  "weight_decay": 0.0,
+  "target_loss": "none",
+  "lambda_direction": 1.0,
+  "lambda_norm": 0.1,
+  "lambda_clean": 1.0,
+  "clean_threshold": 0.85,
+  "diffusion_compute_dtype": "float32",
+  "checkpoint_steps": [
+    45
+  ],
+  "selection_seed": 42,
+  "modes": [
+    "full"
+  ],
+  "optimization_generation_index": 0,
+  "lambda_victim": 2.0,
+  "condition_mode": "staged",
+  "clean_slack": 0.02,
+  "clean_constraint": "fixed_baseline_adaptive_cosine_hinge_squared",
+  "feedback_loss": "victim_plus_clean_plus_ssim",
+  "generation_index": 0,
+  "full_mode_updates": 45,
+  "condition_stage_names": [
+    "stage_1",
+    "stage_2",
+    "stage_3",
+    "stage_4",
+    "stage_5",
+    "stage_6",
+    "stage_7",
+    "stage_8",
+    "stage_9",
+    "stage_10",
+    "stage_11",
+    "stage_12",
+    "stage_13",
+    "stage_14",
+    "stage_15",
+    "stage_16",
+    "stage_17",
+    "stage_18",
+    "stage_19",
+    "stage_20",
+    "stage_21"
+  ],
+  "condition_stage_count": 21,
+  "saved_optimization_updates": [
+    45
+  ],
+  "prior_v4_metric_matching": false,
+  "victim_evaluation": true,
+  "experiment_name": "stage3_st_ghost_clean_init_staged21_1000_step45_lr003_four_seeds_v1",
+  "sample_count": 1000,
+  "evaluated_optimization_updates": [
+    45
+  ],
+  "vae_image_contract": {
+    "version": "rgb01_vae_signed_v1",
+    "encoder_input": "2 * RGB_[0,1] - 1",
+    "latent_scaling": "encode * scaling_factor; decode / scaling_factor",
+    "decoder_output": "clamp(decoded / 2 + 0.5, 0, 1)"
+  },
+  "ssim_constraint": "fixed_256_rgb_gaussian_ssim_hinge_squared",
+  "ssim_threshold": 0.8,
+  "ssim_resolution": 256,
+  "lambda_ssim": 1.0,
+  "condition_initialization": "clean",
+  "final_candidates_per_task": 4,
+  "final_generation_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "stage1_archive_role": "none_clean_images_selected_from_stage3_manifest",
+  "success_definition": "at_least_one_of_four_victim_yes_no_detector_verification",
+  "source_output": "outputs/stage3_original_ghost_comparison",
+  "output_dir": "outputs/stage3_st_ghost_clean_init_staged21_1000_step45_lr003_four_seeds_v1/optimization"
+}

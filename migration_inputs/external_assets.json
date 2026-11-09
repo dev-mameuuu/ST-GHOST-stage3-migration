@@ -1,0 +1,26 @@
+{
+  "clip_checkpoint": {
+    "path": "st-ghost/data/models/CLIP-ViT-H-14-laion2B-s32B-b79K/open_clip_model.safetensors",
+    "sha256": "0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5",
+    "bytes": 3944517836,
+    "model": "ViT-H-14",
+    "pretrained": "laion2b_s32b_b79k"
+  },
+  "previous_projector": {
+    "path": "outputs/projector_qwen/best_state_dict.pt",
+    "sha256": "f88af0f3857de50eaa85a298f8f8c54cd787f7931da3b93c1267bb2d8fdedc7f",
+    "bytes": 80324673,
+    "victim": "Qwen2.5-VL-7B-Instruct",
+    "tokens": 144,
+    "target_dim": 3584,
+    "reuse_for_a_different_victim": false
+  },
+  "asset_sources": {
+    "victim": "Qwen/Qwen2.5-VL-7B-Instruct (replace after adapting victim interface)",
+    "generator": "stabilityai/stable-diffusion-2-1-unclip",
+    "detector": "google/owlv2-base-patch16-ensemble",
+    "dataset": "COCO train2017 images + instances_train2017.json + captions_train2017.json"
+  },
+  "weights_included": false,
+  "dataset_included": false
+}
